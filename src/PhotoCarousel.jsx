@@ -20,23 +20,17 @@ const mediaItems = [
 
 function PhotoCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isLoaded, setIsLoaded] = useState(true);
-
-  const handleChange = (nextIndex) => {
-    setIsLoaded(false);
-    setTimeout(() => {
-      setCurrentIndex(nextIndex);
-    }, 100); // Small delay to trigger fade-out
-  };
 
   const prev = () => {
-    const newIndex = currentIndex === 0 ? mediaItems.length - 1 : currentIndex - 1;
-    handleChange(newIndex);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? mediaItems.length - 1 : prevIndex - 1
+    );
   };
 
   const next = () => {
-    const newIndex = currentIndex === mediaItems.length - 1 ? 0 : currentIndex + 1;
-    handleChange(newIndex);
+    setCurrentIndex((prevIndex) =>
+      prevIndex === mediaItems.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   const currentItem = mediaItems[currentIndex];
@@ -50,29 +44,21 @@ function PhotoCarousel() {
         Our Memories
       </h1>
 
-      {/* Media Container */}
       <div
-        className={`w-full flex justify-center items-center bg-black rounded-lg p-2 transition-opacity duration-700 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        }`}
-        style={{ height: "500px" }}
+        className="w-full flex justify-center items-center bg-black rounded-lg p-2"
+        style={{ height: "500px" }} // Fixed height to prevent shrinking
       >
         {currentItem.type === "image" ? (
           <img
             src={currentItem.src}
             alt={currentItem.alt}
-            onLoad={() => setIsLoaded(true)}
-            className="max-h-full object-contain rounded-md shadow-md"
+            className="max-w-full max-h-full object-contain rounded-md shadow-md"
           />
         ) : (
           <video
             src={currentItem.src}
             controls
-            playsInline
-            muted
-            autoPlay
-            onCanPlayThrough={() => setIsLoaded(true)}
-            className="max-h-full object-contain rounded-md shadow-md"
+            className="max-w-full max-h-full object-contain rounded-md shadow-md"
           />
         )}
       </div>
