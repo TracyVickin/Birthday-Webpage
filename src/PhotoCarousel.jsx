@@ -20,40 +20,59 @@ const mediaItems = [
 
 function PhotoCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(true);
+
+  const handleChange = (nextIndex) => {
+    setIsLoaded(false);
+    setTimeout(() => {
+      setCurrentIndex(nextIndex);
+    }, 100); // Small delay to trigger fade-out
+  };
 
   const prev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? mediaItems.length - 1 : prevIndex - 1
-    );
+    const newIndex = currentIndex === 0 ? mediaItems.length - 1 : currentIndex - 1;
+    handleChange(newIndex);
   };
 
   const next = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === mediaItems.length - 1 ? 0 : prevIndex + 1
-    );
+    const newIndex = currentIndex === mediaItems.length - 1 ? 0 : currentIndex + 1;
+    handleChange(newIndex);
   };
 
   const currentItem = mediaItems[currentIndex];
 
   return (
     <div
-      className="relative mx-auto overflow-hidden rounded-lg shadow-lg w-full  py-6 my-6 px-4"
+      className="relative mx-auto overflow-hidden rounded-lg shadow-lg w-full py-6 my-6 px-4"
       style={{ backgroundColor: "rgba(205, 133, 157, 0.3)" }}
     >
-      <h1 className="text-3xl sm:text-4xl text-center font-bold mb-4 text-pink-500">Our Memories</h1>
-      
-      <div className="w-full flex justify-center items-center bg-black rounded-lg p-2">
+      <h1 className="text-3xl sm:text-4xl text-center font-bold mb-4 text-pink-500">
+        Our Memories
+      </h1>
+
+      {/* Media Container */}
+      <div
+        className={`w-full flex justify-center items-center bg-black rounded-lg p-2 transition-opacity duration-700 ${
+          isLoaded ? "opacity-100" : "opacity-0"
+        }`}
+        style={{ height: "500px" }}
+      >
         {currentItem.type === "image" ? (
           <img
             src={currentItem.src}
             alt={currentItem.alt}
-            className="max-w-full max-h-[500px] object-contain rounded-md shadow-md"
+            onLoad={() => setIsLoaded(true)}
+            className="max-h-full object-contain rounded-md shadow-md"
           />
         ) : (
           <video
             src={currentItem.src}
             controls
-            className="max-w-[1100px] max-h-[500px] object-contain rounded-md shadow-md"
+            playsInline
+            muted
+            autoPlay
+            onCanPlayThrough={() => setIsLoaded(true)}
+            className="max-h-full object-contain rounded-md shadow-md"
           />
         )}
       </div>
