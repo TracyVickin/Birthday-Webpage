@@ -6,7 +6,7 @@ const reasons = [
   "Your love feels like home.Wherever we are, being with you feels like the safest, warmest place in the world.",
   "You love me even when I’m moody. i appreciate your efforts in lifting my spirits and making me smile.",
   "You give the warmest, safest hugs.",
-  "You remember the little things. You pay attention to me,my body and everyother details that make me feel special and loved.",
+  "You remember the little things. You pay attention to me,my body and everyother details. That make me feel special and loved.",
   "You’re my favorite notification. Fuck!! you have no idea how much i smile when i see notifications from you",
   "You always check on me even when you're busy.",
   "You inspire me to be better.Your passion and drive push me to chase my dreams alongside you.",

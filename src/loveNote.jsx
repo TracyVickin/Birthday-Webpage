@@ -39,7 +39,7 @@ function LoveNote() {
         <p className="text-base md:text-lg leading-relaxed whitespace-pre-wrap text-black font-medium text-left">
           My King,
 
-          I still remember the day we met — how normal it seemed, how unaware I was of what you would come to mean to me.
+          I still remember the day we met, how normal it seemed, how unaware I was of what you would come to mean to me.
           I never imagined that moment would lead me here, writing this letter with a heart so full of love for you.
 
           At first, I didn’t think much of it. You were kind, you were warm, and then, without even realizing it,
