@@ -13,6 +13,7 @@ function Header() {
           <p className="text-lg text-white/90 italic">
             “Every love story is beautiful, but ours is my favorite.” 🎂🎁
           </p>
+          <h5>Open your birthday webpage on your laptop, for better view 😉 </h5>
         </div>
 
         {/* Timer on the Right */}

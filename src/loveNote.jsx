@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import ToastMessage from "./toastMessage";
 function LoveNote() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -9,6 +9,8 @@ function LoveNote() {
   }, []);
 
   return (
+    <>
+    <ToastMessage/>
     <div
       className="relative flex justify-center items-center min-h-screen py-10 px-4"
       style={{ backgroundColor: "rgba(205, 133, 157, 0.3)" }}
@@ -67,6 +69,7 @@ function LoveNote() {
         </p>
       </div>
     </div>
+    </>
   );
 }
 
