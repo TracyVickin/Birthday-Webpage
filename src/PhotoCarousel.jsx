@@ -15,6 +15,9 @@ const mediaItems = [
   { type: "video", src: "/video7.jpeg", alt: "Video 7"},
   { type: "video", src: "/video8.jpeg", alt: "Video 8"},
   { type: "video", src: "/video10.mp4", alt: "Video 10"},
+  { type: "video", src: "/video11.mp4", alt: "Video 11"},
+  { type: "video", src: "/video12.mp4", alt: "Video 12"},
+  { type: "video", src: "/video13.mp4", alt: "Video 13"},
 ];
 
  function PhotoCarousel() {
