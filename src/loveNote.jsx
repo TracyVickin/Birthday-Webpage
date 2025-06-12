@@ -29,7 +29,7 @@ function LoveNote() {
       <div
         className={`relative z-10 max-w-4xl w-full transition-opacity duration-1000 ${
           isVisible ? "opacity-100" : "opacity-0"
-        } bg-white/10 backdrop-blur-md p-6 md:p-10 rounded-xl shadow-lg text-black text-center`}
+        } bg-white/5 backdrop-blur-md p-6 md:p-10 rounded-xl shadow-lg text-black text-center`}
       >
         <h1 className="text-3xl md:text-5xl font-bold mb-6">
           Happy Birthday, My Heart! 💖
