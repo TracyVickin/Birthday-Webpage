@@ -10,7 +10,7 @@ const videos = [
   },
   {
     title: "You Made Me Love This Song, (i think about you, your touch whenever I hear it)",
-    url: "https://www.youtube.com/watch?v=Mx92lTYxrJQ&list=RDMx92lTYxrJQ&start_radio=1",
+    url: "https://www.youtube.com/watch?v=Mx92lTYxrJQ",
   },
   {
     title: "Song Three",
