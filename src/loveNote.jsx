@@ -48,11 +48,11 @@ function LoveNote() {
 
           Every moment we’ve shared has become a memory I treasure: the silly and funny ones, the quiet ones,
           the deep conversations, and even the annoying moments. Being with you made me believe in love again —
-          not just the kind you see in movies, but real love — patient, kind, grounding.
+          not just the kind you see in movies, but real love, patient, kind, grounding.
 
           You’ve shown me that love isn’t always fireworks. Sometimes it’s warmth, comfort, safety... home.
 
-          I find myself always looking forward to being around you — to seeing your face, hearing your voice,
+          I find myself always looking forward to being around you, to seeing your face, hearing your voice,
           feeling your touch. And every time I leave you, damn!! I feel a quiet ache, like I’ve left a part of me behind.
 
           You are special to me in a way I can't fully describe. You're not just someone I love; you're someone I cherish,
@@ -60,7 +60,7 @@ function LoveNote() {
 
           Thank you for being you, for being mine, for taking care of me and my heart, and for making every day feel like a beautiful adventure.
 
-          I love you so much AYANFE MI — more than I’ve ever loved anyone. And I will keep loving you in all the quiet ways and loud ways,
+          I love you so much AYANFE MI, more than I’ve ever loved anyone. And I will keep loving you in all the quiet ways and loud ways,
           in every version of myself, through every season we walk through together.
 
           Every moment with you is a gift, and today we celebrate the most amazing person I know.
