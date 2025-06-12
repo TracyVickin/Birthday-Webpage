@@ -6,7 +6,7 @@ import ReactPlayer from "react-player";
 const videos = [
   {
     title: "This Song Describes How Much I Love You",
-    url: "https://www.youtube.com/watch?v=Rj3hEAOyZqQ&list=RDRj3hEAOyZqQ&start_radio=1",
+    url: "https://www.youtube.com/watch?v=Rj3hEAOyZqQ",
   },
   {
     title: "You Made Me Love This Song, (i think about you, your touch whenever I hear it)",
