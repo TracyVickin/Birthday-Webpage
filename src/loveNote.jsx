@@ -47,7 +47,7 @@ function LoveNote() {
           and now I can’t stop loving you.
 
           Every moment we’ve shared has become a memory I treasure: the silly and funny ones, the quiet ones,
-          the deep conversations, and even the annoying moments. Being with you made me believe in love again —
+          the deep conversations, and even the annoying moments. Being with you made me believe in love again,
           not just the kind you see in movies, but real love, patient, kind, grounding.
 
           You’ve shown me that love isn’t always fireworks. Sometimes it’s warmth, comfort, safety... home.

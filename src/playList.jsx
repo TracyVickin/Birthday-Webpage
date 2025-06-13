@@ -9,12 +9,12 @@ const videos = [
     url: "https://www.youtube.com/watch?v=Rj3hEAOyZqQ",
   },
   {
-    title: "You Made Me Love This Song, (i think about you, your touch whenever I hear it)",
-    url: "https://www.youtube.com/watch?v=Mx92lTYxrJQ",
+    title: "The night we watched 50 Shades together… this song played, and for a moment, I felt like the girl in the movie, completely loved, completely yours.",
+    url: "https://www.youtube.com/watch?v=AJtDXIazrMo",
   },
   {
-    title: "Song Three",
-    url: "https://www.youtube.com/watch?v=VIDEO_ID_3",
+    title: "You Made Me Love This Song, (i think about you, your touch whenever I hear it)",
+    url: "https://www.youtube.com/watch?v=Mx92lTYxrJQ",
   },
 ];
 
